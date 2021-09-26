@@ -4,7 +4,7 @@
   "description": "It is a javascript project 🟨 for create a plugin for extend the functionality for a video media player feature ▶️",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "dev": "live-server"
   },
   "repository": {
     "type": "git",
