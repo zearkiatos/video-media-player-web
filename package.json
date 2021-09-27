@@ -1,0 +1,38 @@
+{
+  "name": "video-media-player-web",
+  "version": "1.0.0",
+  "description": "It is a javascript project 🟨 for create a plugin for extend the functionality for a video media player feature ▶️",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "test": "jest -c jest.config.js --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zearkiatos/video-media-player-web.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Video",
+    "Media",
+    "Player",
+    "TypeScript",
+    "Plugin",
+    "Frontend"
+  ],
+  "author": "Pedro Capriles <caprilespe@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zearkiatos/video-media-player-web/issues"
+  },
+  "homepage": "https://github.com/zearkiatos/video-media-player-web#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "jest": "^27.2.2",
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-transform-runtime": "^7.15.0"
+  }
+}
