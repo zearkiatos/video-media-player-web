@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "It is a javascript project 🟨 for create a plugin for extend the functionality for a video media player feature ▶️",
   "main": "index.js",
-  "type":"module",
   "scripts": {
     "dev": "live-server",
     "test": "jest -c jest.config.js --coverage"
