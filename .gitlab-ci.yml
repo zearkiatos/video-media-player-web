@@ -3,6 +3,7 @@ stages:
   - install
   - test
   - docker
+  - deploy
 
 install-dependencies:
   stage: install
