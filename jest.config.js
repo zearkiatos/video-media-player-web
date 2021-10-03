@@ -2,7 +2,7 @@ module.exports = {
     name: "video-media-player-web",
     verbose: false,
     testMatch: ["**/*.test.js"],
-    testEnvironment: "node",
+    testEnvironment:"node",
     collectCoverageFrom: ["src/**/*.js", "!**/node_modules/**"],
     coverageThreshold: {
       global: {
