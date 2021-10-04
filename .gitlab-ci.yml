@@ -54,8 +54,9 @@ pages:
   script:
     - echo "Deploy a review app 🚀"
     - rm -rf public
-    - cp index.html build/404.html
-    - mv . public
+    - mkdir public
+    - mv index.html public
+    - mv scripts public
   artifacts:
     paths:
       - public
