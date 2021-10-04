@@ -94,4 +94,16 @@ describe("Test site for object prototypes", () => {
     expect(logSpy.mock.calls[0][0]).toBe(expectedZeldaValue);
     expect(logSpy.mock.calls[1][0]).toBe(expectedLinkValue);
   });
+
+  test("Should return the own of specifict propertie", () => {
+    const zelda = new prototypeModule.HeroWithNew('Zelda');
+    const link = new prototypeModule.HeroWithNew('Link');
+    
+    zelda.greet();
+    link.greet();
+
+    expect(zelda.hasOwnProperty('name')).toBeTruthy();
+    expect(zelda.hasOwnProperty('greet')).toBeFalsy();
+    expect(zelda.hasOwnProperty('toString')).toBeFalsy();
+  });
 });
