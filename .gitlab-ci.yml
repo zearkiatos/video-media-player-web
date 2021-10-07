@@ -56,6 +56,7 @@ pages:
     - rm -rf public
     - mkdir public
     - mv index.html public
+    - mv assets public
     - mv scripts public
   artifacts:
     paths:
