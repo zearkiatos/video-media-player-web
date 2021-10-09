@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
     name: "video-media-player-web",
     verbose: false,
