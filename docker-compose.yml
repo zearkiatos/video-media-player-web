@@ -6,6 +6,7 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: video-media-player-web
+    env_file: .env
     volumes: 
       - ".:/app"
     ports:
