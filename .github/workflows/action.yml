@@ -22,6 +22,16 @@ jobs:
       run: echo "The build number $GITHUB_RUN_NUMBER 🏗"
     - name: Install dependencies
       run: npm install
+    - name: Create .env
+      run: |
+        touch .env &&
+        echo "NODE_ENV=${NODE_ENV}" > .env &&
+        echo "THEMOVIEDB_API_BASE_URL=${THEMOVIEDB_API_BASE_URL}" >> .env &&
+        echo "THEMOVIEDB_API_KEY=${THEMOVIEDB_API_KEY}" >> .env
+      env:
+        NODE_ENV: ${{ secrets.NODE_ENV }}
+        THEMOVIEDB_API_BASE_URL: ${{ secrets.THEMOVIEDB_API_BASE_URL }}
+        THEMOVIEDB_API_KEY: ${{ secrets.THEMOVIEDB_API_KEY }}
     - name: Test 🧪
       run: npm run test
     - name: Build docker 🐳

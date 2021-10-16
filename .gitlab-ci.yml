@@ -8,6 +8,11 @@ stages:
 install-dependencies:
   stage: install
   script:
+    - echo "Generate environment variables 🛠"
+    - touch .env
+    - echo "NODE_ENV=${NODE_ENV}" > .env
+    - echo "THEMOVIEDB_API_BASE_URL=${THEMOVIEDB_API_BASE_URL}" >> .env
+    - echo "THEMOVIEDB_API_KEY=${THEMOVIEDB_API_KEY}" >> .env
     - npm install
   artifacts:
     expire_in: 1hr
