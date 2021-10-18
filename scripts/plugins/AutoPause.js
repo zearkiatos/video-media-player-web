@@ -37,7 +37,6 @@ class AutoPause {
       this.player.play();
     } else {
       this.player.pause();
-      s;
     }
   }
 }
